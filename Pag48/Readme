@@ -1,0 +1,4 @@
+Este ejemplo no agrega nada al de la página 37. En este caso
+también se utiliza "gets()" para obtener una cadena del puerto
+serie.
+
