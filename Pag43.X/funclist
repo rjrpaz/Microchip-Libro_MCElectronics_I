@@ -1,0 +1,11 @@
+_OpenUSART: CODE, 1972 0 94
+__stringdata: SMALLCONST, 1546 0 5
+_putch: CODE, 2254 0 10
+_dpowers: SMALLCONST, 1536 0 10
+_main: CODE, 1858 0 114
+__initialization: CODE, 2244 0 0
+___lwdiv: CODE, 2066 0 86
+_Delay10KTCYx: CODE, 2222 0 22
+_printf: CODE, 1552 0 306
+___lwmod: CODE, 2152 0 70
+Total: 717
