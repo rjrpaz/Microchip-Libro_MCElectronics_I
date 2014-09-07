@@ -13,9 +13,14 @@
  * https://www.youtube.com/watch?v=crSuPZy5EUQ
  * http://www.microchip.com/forums/m624475.aspx
  * http://www.instructables.com/id/Programming-PIC-Microcontrollers/step6/Configure-Oscillator/
+ *
+ * La redefinición de "putch()" necesaria para que funcione correctamente la función
+ * printf() con el USART, se inspiró en:
+ * http://www.microchip.com/forums/m702322.aspx
  */
 
 #include <xc.h>
+#include <stdio.h>
 #include <stdint.h>
 #include <plib/usart.h>
 
@@ -30,6 +35,14 @@
 #pragma config WRTB = OFF, WRTC = OFF, WRTD = OFF                            // CONFIG6H
 #pragma config EBTR0 = OFF, EBTR1 = OFF, EBTR2 = OFF, EBTR3 = OFF            // CONFIG7L
 #pragma config EBTRB = OFF                                                   // CONFIG7H
+
+void putch(unsigned char byte)
+{
+    while (!TXIF)
+        continue;
+    TXREG = byte;
+}
+
 
 void main(void) {
 
@@ -68,7 +81,7 @@ void main(void) {
 
     for(;;) {
         while (BusyUSART()); // Espera a que el buffer esté libre para tranmistir
-        putsUSART((char *)"\nHola Mundo!!!\n");
+        printf("Hola Mundo!!!\n");
         Delay10KTCYx(20);  // Espera entre una escritura y la siguiente
     }
 }
