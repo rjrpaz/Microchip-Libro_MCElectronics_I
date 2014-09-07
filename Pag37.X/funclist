@@ -1,0 +1,8 @@
+_OpenUSART: CODE, 1554 0 94
+__stringdata: SMALLCONST, 1536 0 16
+_main: CODE, 1648 0 70
+__initialization: CODE, 1786 0 2
+_putsUSART: CODE, 1718 0 46
+_WriteUSART: CODE, 1802 0 16
+_Delay10KTCYx: CODE, 1764 0 22
+Total: 266
