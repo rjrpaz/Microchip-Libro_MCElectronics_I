@@ -1,0 +1,17 @@
+_OpenUSART: CODE, 31158 0 94
+__stringdata: MEDIUMCONST, 32486 0 280
+_putch: CODE, 30848 0 10
+_gets: CODE, 30886 0 22
+_dpowers: MEDIUMCONST, 32476 0 10
+_main: CODE, 31974 0 502
+_atoi: CODE, 31458 0 210
+_cgets: CODE, 31252 0 206
+_getche: CODE, 30868 0 18
+__initialization: CODE, 30858 0 0
+___lwdiv: CODE, 31072 0 86
+_isdigit: CODE, 30908 0 36
+_getch: CODE, 30840 0 8
+_printf: CODE, 31668 0 306
+___lwmod: CODE, 31002 0 70
+___wmul: CODE, 30944 0 58
+Total: 1916
