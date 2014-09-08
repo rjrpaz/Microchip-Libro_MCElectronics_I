@@ -1,0 +1,8 @@
+_OpenUSART: CODE, 1950 0 94
+__stringdata: SMALLCONST, 1536 0 112
+_putch: CODE, 2100 0 10
+_cambiar: CODE, 2044 0 46
+_main: CODE, 1650 0 174
+__initialization: CODE, 2090 0 0
+_printf: CODE, 1824 0 126
+Total: 562
